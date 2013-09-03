@@ -24,7 +24,8 @@ LOCAL_C_INCLUDES += \
 	external/clearsilver/util/regex
 
 LOCAL_CFLAGS += \
-	-DHAVE_CONFIG_H
+	-DHAVE_CONFIG_H \
+        -fno-strict-aliasing
 
 LOCAL_MODULE := libsh
 

@@ -21,7 +21,8 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../../lib
 
 LOCAL_CFLAGS += \
-	-DHAVE_CONFIG_H
+	-DHAVE_CONFIG_H \
+        -fno-strict-aliasing
 
 LOCAL_MODULE := libhistory
 

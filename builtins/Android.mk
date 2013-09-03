@@ -64,7 +64,8 @@ LOCAL_CFLAGS += \
 	-DCONF_HOSTTYPE=\"arm\" \
 	-DCONF_OSTYPE=\"android-eabi\" \
 	-DCONF_MACHTYPE=\"arm-android-eabi\" \
-	-DCONF_VENDOR=\"unknown\"
+	-DCONF_VENDOR=\"unknown\" \
+        -fno-strict-aliasing
 LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libbuiltins
 include $(BUILD_STATIC_LIBRARY)

@@ -26,7 +26,8 @@ LOCAL_CFLAGS += \
 	-DCONF_MACHTYPE=\"arm-android-eabi\" \
 	-DCONF_VENDOR=\"unknown\" \
 	-DLOCALEDIR=\"/data/locale\" \
-	-DSHELL
+	-DSHELL \
+        -fno-strict-aliasing
 LOCAL_SHARED_LIBRARIES += \
 	libncurses
 LOCAL_STATIC_LIBRARIES += \
